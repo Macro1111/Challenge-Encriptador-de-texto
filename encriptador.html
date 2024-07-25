@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es-co">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styleEncriptador.css">
+    <script src="logicaEncriptador.js"></script>
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img src="./assets/Frame 6.png" alt="Logo Alura">
+    </header>
+    <main class="presentacion">
+        <section class="presentacion__contenido">
+            <div class="presentacion__contenido__input">
+                <textarea id="inputUsuario" class="input__usuario" placeholder="Ingresa el texto a encriptar o desencriptar"></textarea>
+                <div class="presentacion__contenido__botones">  
+                    <button onclick="accionEncriptar()">Encriptar</button>
+                    <button onclick="accionDesencriptar()">Desencriptar</button>
+                </div>  
+            </div>
+        </section>
+        <div class="presentacion__contenido__output">
+            <img id="muñeco" class="imagen_temporal" src="./assets/Muñeco.png" alt="imagen temporal de respuesta">
+            <p id="textoTemporal" class="mensaje_temporal">Ningún mensaje fue encontrado<br><br><strong class="resaltar">Ingresa el texto que desees encriptar o desencriptar.</strong></p>
+            <button id="botonCopiar" style="display: none;" onclick="copiarTexto()">Copiar</button>
+        </div>    
+    </main>
+    <footer>
+        <p class="realizadoPor">Desarrollado por Marco Molina</p>
+    </footer>
+</body>
+</html>

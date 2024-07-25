@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --azul_oscuro: #0A3871;    
+    --fuente_Inter: "Inter", sans-serif;
+}
+
+main{
+    box-sizing: 100%;
+}
+
+
+header{
+    padding-top: 3%;
+    padding-left: 8%;
+}
+
+body{
+    background-color: rgb(224, 240, 234);
+    box-sizing: border-box;
+}
+
+.presentacion{
+    padding: 5% 10% 5% 10%;
+    display: flex;
+    justify-content: space-between;
+    gap: 5.125rem;
+}
+
+
+.presentacion__contenido{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5rem;
+    width: 100%;
+}
+
+
+.presentacion__contenido__input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    font-family: var(--fuente_Inter);
+    height: 100%;
+}
+
+.input__usuario{
+    border: none;
+    background-color: rgb(224, 240, 234);
+    width: 100%;
+    height: 100%;
+    padding: 1.25rem;
+    box-sizing: border-box;
+    font-size: 2rem;
+    font-family: var(--fuente_Inter);
+}
+
+.input__usuario::placeholder{
+    font-family: var(--fuente_Inter);
+    font-size: 2rem;
+    color: #0A3871;
+    text-align: left;
+    vertical-align: top;
+}
+
+.presentacion__contenido__botones{
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    gap: 15%; 
+}
+
+button{
+    border-radius: 16px;
+    background: var(--azul_oscuro);
+    padding: 1rem 1.5rem;
+    width: 80%;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+    margin-top: 2rem;
+    font-family: "Inter", sans-serif;
+    color: aliceblue;
+}
+
+.presentacion__contenido__output{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    background-color: white;
+    border-radius: 2rem;
+    justify-content: center;
+    overflow: auto;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.imagen_temporal{
+    padding: 5%;
+    width: 15.625rem;
+}
+
+.mensaje_temporal{
+    padding: 10%;
+    margin: 0.625rem;
+    box-sizing: border-box;
+}
+
+.resaltar{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#botonCopiar{
+    width: 6.25rem;
+    margin: auto;
+}
+
+.realizadoPor{
+    padding: 2%;
+    color: aliceblue;
+    background-color: var(--azul_oscuro);
+    text-align: center;
+    font-family: var(--fuente_Inter);
+}
+
+
+@media(max-width: 1025px){
+
+    .presentacion{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input__usuario::placeholder{
+        font-size: 1.5rem;
+    }
+
+    .imagen_temporal{
+        display: none
+    }
+}
